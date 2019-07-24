@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript desde 0</title>
+    <script type="text/javascript" src="Js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="Js/Users.js"></script>
+   <!-- <script type="text/javascript" src="Class/Programmers.js"></script> -->
+   <!-- <script type="text/javascript" src="Class/Language.js"></script> -->
+    <script type="text/javascript" src="app.js"></script> 
+</head>
+<body>
+    <center>
+        <!--  <input type="button" onclick="app()" value="Activar Funcion"> y finaliza por -->
+         <form action="" id="form">
+            <input type="text" name="name" id="name" placeholder="Nombre"> <br>
+            <input type="text" name="age" id="age" placeholder="Edad"> <br>
+            <button type="button" onclick="getData()">Enviar</button>
+        </form>
+        <h1>Buscar datos en una Tabla</h1>
+        <form accept-charset="utf-8" method="POST">
+            <input type="text" name="search" id="search" value="" placeholder="Search" 
+            onkeyup="searchUser();" />
+        </form>
+        <div class="datagrid">
+            <table>
+               <thead>
+                    <tr class="titulo">
+                            <td>
+                                ID
+                            </td>
+                            <td>
+                                Name
+                            </td>
+                            <td>
+                                Age
+                            </td>
+                        </tr> 
+               </thead>
+               <tbody id="resultSearch"></tbody>
+            </table>
+        </div>
+    </center>  
+</body>
+</html>
